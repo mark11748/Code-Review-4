@@ -1,7 +1,7 @@
 function Pizza(size,meats,veggies) {
 	this.size    = size;    //int : 1 to 3
-	this.meats   = meats;   //array of bools [pepperoni,sausage,anchovies,carp,haddock,seal,orangeRuffie]
-	this.veggies = veggies; //array of bools [bell,onion,mushroom,olive,spinach,tomato,pineapple,hotPepper]
+	this.meats   = meats;   //array of bools [pepperoni,sausage,anchovies,ham]
+	this.veggies = veggies; //array of bools [bell,onion,mushroom,olive]
   this.price   = 0;
  }
 
@@ -26,7 +26,7 @@ $(document).ready(function(){
   $("button#ORDER").submit(function(event){
     var myPizza = Pizza($("input#SIZE"),$("input#MEAT"),$("input#VEG"));
     myPizza.price();
-    $("#RECIEPT").text("TOTAL : "+myPizza.price.toString());
+    $("#RECIEPT").text("<li>TOTAL : "+myPizza.price.toString()+"</li>");
     event.preventDefault();
   })
 
