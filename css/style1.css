@@ -1,0 +1,18 @@
+.order_group {
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 5%;
+  background: #ffb093;
+}
+.reciept_group {
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 5%;
+  background: #cffafc;
+}
